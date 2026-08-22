@@ -7,30 +7,30 @@ using System.Text.RegularExpressions;
 
 // Name from Steam directory
 
-const string GameName = "Lethal Company";
+const string GameName = "How to Fish";
 
 // Name with spaces removed. Used for MSBuild properties & readme example
-const string GameNameNoSpaces = "LethalCompany";
+const string GameNameNoSpaces = "HowToFish";
 
 // Used for template `shortName`. Determines the command for dotnet new, e.g. dotnet new lcmod
-const string GameNameShortNoSpacesLowercase = "lc";
+const string GameNameShortNoSpacesLowercase = "htf";
 
 // A comma-separated list of the Template NuGet package authors
-const string TemplateAuthors = "Robyn, Hamunii";
+const string TemplateAuthors = "Robyn, Hamunii, AtomicTyler";
 
 // The GitHub account name of the owner of the repo
-const string TemplateRepoAuthorNoSpaces = "LethalCompanyModding";
+const string TemplateRepoAuthorNoSpaces = "modding-community-com";
 
 // These combine into NuGet package id, e.g. LethalCompanyModding.BepInExTemplate
 const string TemplateNuGetPackagePrefixNoSpaces = TemplateRepoAuthorNoSpaces;
-const string TemplatePackageNameNoSpaces = "BepInExTemplate";
+const string TemplatePackageNameNoSpaces = "HowToFish-BepInExTemplate";
 
 // Metadata for NuGet package for which repository the package points to
 const string TemplatePackageProjectUrl =
     $"https://github.com/{TemplateRepoAuthorNoSpaces}/{TemplatePackageNameNoSpaces}";
 
 // See: <https://thunderstore.io/api/experimental/community/>
-const string ThunderstoreGameIdentifier = "lethal-company";
+const string ThunderstoreGameIdentifier = "how-to-fish";
 
 // The BepInEx package for the Thunderstore community
 const string BepInExPackFullName = "BepInEx-BepInExPack";
@@ -47,7 +47,7 @@ const string GameLibsVersion = "*-*";
 
 // Does this template support a proper GameLibs package?
 // This determines whether or not the --github-workflow option is available.
-const bool GameLibsAvailable = true;
+const bool GameLibsAvailable = false;
 
 // After configuration is done, execute this script with `dotnet run ConfigureTemplate.cs`.
 // The rest of the script should be ignored.
